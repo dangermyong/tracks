@@ -38,6 +38,6 @@ const addLocation =dispatch => (location, recording) => {
 
 export const { Context, Provider } =createDataContext(
   locationReducer,
-  { startRecording, stopRecording, addLocation },
+  { changeName, startRecording, stopRecording, addLocation },
   { recording: false, locations: [], currentLocation: null, name: '' }
 )
